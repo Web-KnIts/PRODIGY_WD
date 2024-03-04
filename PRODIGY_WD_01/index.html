@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 | Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <div class="navbar " id="nav1">
+                <nav>
+                    <div class="hidden"  id="chk">
+                        none
+                    </div>
+                    <div class="logo">
+                        <h1>DOORDASH</h1>
+                    </div>
+                    <div class="btn_container">
+                        <button>Sign In</button>
+                        <button>Sign Up</button>
+                    </div>
+                 </nav>
+        </div>
+        <div id="page1">
+           <div id="imgContainer">
+            <div class="navBar" id="nav2">
+                <nav>
+                    <div class="hidden">
+                        none
+                    </div>
+                    <div class="logo">
+                        <h1>DOORDASH</h1>
+                    </div>
+                    <div class="btn_container">
+                        <button>Sign In</button>
+                        <button>Sign Up</button>
+                    </div>
+                 </nav>
+            </div>
+            <div id="search_Part">
+                <h1>Discover restaurants and more near you.</h1>
+                <div id="agent_part">
+                    Sign in for saved address
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+    <script>
+const nav1 = document.getElementById("nav1");
+const nav2 = document.getElementById("nav2"); 
+const toggle  = document.getElementById("chk")
+let lastscroll = 0;
+
+window.addEventListener("scroll", () => {
+    const current = window.pageYOffset;
+    if (current > lastscroll) { // Changed condition here
+        nav1.style.display = "initial";
+        toggle.classList.remove("hidden");
+        toggle.classList.add("none")
+
+    } else {
+        nav1.style.display = "none";
+        toggle.classList.remove("none");
+        toggle.classList.add("hidden")
+    }
+    lastscroll = current;
+});
+    </script>
+</body>
+</html>

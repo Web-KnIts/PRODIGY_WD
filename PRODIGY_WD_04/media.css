@@ -1,0 +1,186 @@
+:root{
+    --normal-font-size:1.4vw;
+    --h1-font-size:5vw;
+    --h3-font-size:2vw;
+    --color1:#E55604;
+    --prim-color:#fff;
+    --heading:3vw;
+    --para:30px;
+}
+
+#toggle-button{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 20px;
+    right: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+#toggle-button .bars{
+    height: 2px;
+    width: 100%;
+    background-color:#fff;
+}
+@media (max-width:500px) {
+
+    /* nav css  */
+    /* ---------------------------------------------------------------------------------------------------------------------- */
+     #toggle-button {
+        display: flex;
+    }
+    .top-container-navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nav-bar{
+        width: 100%;
+         display: none;
+         padding-bottom: 50px;
+    }
+    .nav-ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        position: absolute;
+        margin: 0;
+    }
+    .nav-ul li{
+        border-right: 2px solid orange;
+        border-left:2px solid orange;
+        text-align: center;
+    }
+    .nav-ul a{
+        font-size: 20px;
+    }  
+    /* ------------------------------------------------------------------------------------------------------------------ */
+    /* heading css*/
+    .heading{
+        padding-top: 10vh;
+        width: 60%;
+        margin: auto;
+    }
+    .heading h1{
+        font-size: 45px;
+    }
+    .second-heading{
+        float: right;
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+    .second-heading h3{
+        font-size: 34px;
+    }   
+    .second-heading h5{
+        width: auto;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    #open-work-btn{
+        display: initial;
+        width: 100%;
+    }
+    .label h4{
+        display: none;
+    }
+    .label{
+        margin: 50px auto;
+        width: 40%;
+    }
+    #more-label{
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 25vh;
+        padding-left: 20px;
+    }
+    #home{
+        height: 100vh;
+    }
+    #more-label div h4 i:active{
+        color: #E55604;
+    }   
+    .About-myself{
+        height: 100vh;
+    }
+    #About-me{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 50px;
+    }
+    .About-head{
+        display: none;
+    }
+    #my-image img{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+    .About-head-media
+    {
+        display: initial;
+    }
+    .about-txt p {
+        word-spacing: 8px;
+        font-size: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+    .my-skillss
+    {
+        height: 100vh;
+        width: 100%;
+        margin-top: 40px;
+    
+    }
+    #my-skills{
+        padding-top: 5vh;
+    }
+    #my-skills div h1{
+        font-size: 30px;
+    }
+    #row-skill 
+    {
+        display: none;
+    }
+    .skill-col h3{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .media-querry{
+        display: initial;
+    }
+    .skill-set{
+        margin: 15vh 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .progress h4
+    {
+        font-size: 20px;
+    }
+    .qualification-column {
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+    }
+    .sc-img img{
+        width: 300px;
+    }
+    .qualification-column table{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    #clock{
+        display: none;
+    }
+    .qualification h1{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+}

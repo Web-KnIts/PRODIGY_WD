@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 | Stop Watch</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <div id="Stop_Watch_Container">
+            <div id="Display_Box">
+                00 : 00 : 00 : 000
+            </div>
+            <div id="Button_Container">
+                <button onclick="HandleStart()">Start</button>
+                <button onclick="HandlePause()">Pause</button>
+                <button onclick="HandleReset()">Reset</button>
+                <button onclick="HandleLap()">Lap</button>
+            </div>
+            <div id="Lap_Container">
+            </div>
+        </div>
+    </div>
+    <script>
+ let millisecond = 0;
+let second  = 0;
+let min = 0;
+let hours = 0;
+
+let StopWatch = null;
+
+let display = document.getElementById("Display_Box");
+
+let h, m, sec, milisec; 
+
+function HandleStart() {
+    if (StopWatch !== null) {
+        clearInterval(StopWatch);
+    }
+    StopWatch = setInterval(HandleStopWatch, 10);
+}
+
+function HandlePause() {
+    clearInterval(StopWatch);
+}
+
+function HandleReset() {
+    clearInterval(StopWatch);
+    millisecond = 0;
+    second = 0;
+    min = 0;
+    hours = 0;
+    display.innerHTML = `00 : 00 : 00: 000`
+    document.querySelector("#Lap_Container").innerHTML = null;
+}
+
+function HandleStopWatch() {
+    millisecond += 10;
+    if (millisecond == 1000) {
+        millisecond = 0;
+        second += 1;
+        if (second == 60) {
+            second = 0;
+            min += 1;
+            if (min == 60) {
+                min = 0;
+                hours++;
+            }
+        }
+    }
+    h = hours < 10 ? "0" + hours : hours;
+    m = min < 10 ? "0" + min : min;
+    sec = second < 10 ? "0" + second : second;
+    milisec = millisecond < 10 ? "00" + millisecond : millisecond < 100 ? "0" + millisecond : millisecond;
+    display.innerHTML = `${h} : ${m} : ${sec} : ${milisec} `;
+}
+
+function HandleLap() {
+    if(StopWatch != null)
+    {
+    var AddLap = `<h1> ${h} : ${m} : ${sec} : ${milisec} <button onclick="HandleDelete()" id="Dump">X</button></h1>`
+    document.querySelector("#Lap_Container").innerHTML += AddLap;
+    }
+}
+function HandleDelete(){
+   var del = document.getElementById("Dump").parentElement.remove();
+}
+    </script>
+</body>
+</html>

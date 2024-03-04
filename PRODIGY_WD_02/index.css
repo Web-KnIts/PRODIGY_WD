@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: lightskyblue;
+}
+#Stop_Watch_Container{
+    padding: 30px;
+    width: 40%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.366);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#Display_Box{
+    font-family: 'Roboto mono',monospace;
+    color: blue;
+    font-size: 1.5vw;
+    padding: 30px;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(20, 23, 91, 0.67);
+}
+#Button_Container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Button_Container button{
+    width: 120px;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 1vw;
+    border-radius: 5px;
+    border: none;
+    background-color: burlywood;
+    color: white;
+}
+#Lap_Container{
+    color: blue;
+    font-weight: 300;
+    font-family: 'Roboto mono';
+}
+#Lap_Container h1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:40px;
+}
+#Lap_Container h1 button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+    padding: 10px 20px;
+    width: 40px;
+    height: 40px;
+    outline:none;
+    background-color: black;
+    border: none;
+    border-radius: 50%;
+
+}

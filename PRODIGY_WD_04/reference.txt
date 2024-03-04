@@ -1,0 +1,16 @@
+Google Fonts : (CDN Links)
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Poppins:wght@500;600&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pixelify+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+ 
+font family :(Used)
+font-family: 'Caramel', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Pixelify Sans', cursive;
+
+Icons:
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+

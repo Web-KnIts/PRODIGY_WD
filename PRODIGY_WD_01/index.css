@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.hidden{
+    visibility: hidden;
+}
+.none{
+    display: none;
+}
+.navbar{
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  animation: 300ms ease-in-out 0s 1 normal none running scrollAnimate;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+#page1 {
+    height: 150vh;
+}
+#page1 .navBar nav,.navbar nav
+{
+    padding: 10px 30px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar nav{
+    color: orangered;
+}
+#imgContainer{
+    background-image: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
+     height: 550px;
+    padding: 0px 8px;
+}
+#search_Part
+{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes scrollAnimate {
+    0%{
+        transform:translateY(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.btn_container button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    background-color: rgba(231, 28, 6, 0.742);
+    word-spacing: 1px;
+    padding-left: 10px;
+}
+.btn_container button:nth-child(1){
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.btn_container button:nth-child(2)
+{
+    background-color: #fff;
+}
+.btn_container button:nth-child(1):hover
+{
+    background-color: rgb(217, 20, 0);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+     color: rgb(255, 255, 255);
+}

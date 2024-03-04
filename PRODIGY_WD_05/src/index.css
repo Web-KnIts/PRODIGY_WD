@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #d5d4d4;
+  max-width: 1080;
+  margin: 20px 20px;
+  font-family: "Roboto",Arial;
+}
